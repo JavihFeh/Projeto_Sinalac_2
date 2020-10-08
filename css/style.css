@@ -1,0 +1,41 @@
+#wrapper{
+    padding-bottom: 30px;
+}
+
+.btn-outline-success:hover{
+    background-color: limegreen;
+    
+}
+
+#nav-header{
+    background-color: palegreen;
+}
+
+.card {
+    margin-top: 5px;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+#footer{
+    margin-top: 5px;
+    height: 25px;
+    background-color: limegreen;
+    text-align: center;
+}
+
+#responsive-body {
+    width: 100%;
+    margin: 0;
+}
+
+.card-btn{
+    align-content: center;
+}
+
+.carousel-inner {
+    margin-top: 2px;
+}
+
