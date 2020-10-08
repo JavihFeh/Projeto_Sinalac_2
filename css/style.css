@@ -11,6 +11,10 @@
     background-color: palegreen;
 }
 
+#log-btn {
+    float: right;
+}
+
 .card {
     margin-top: 5px;
 }
