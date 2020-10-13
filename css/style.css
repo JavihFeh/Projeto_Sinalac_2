@@ -39,3 +39,7 @@
     margin-top: 2px;
 }
 
+.card-img-top {
+    width: 200px;
+    height: 200px;
+}
