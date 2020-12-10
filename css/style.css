@@ -19,8 +19,8 @@
     margin-top: 5px;
 }
 
-.card-text {
-    text-align: justify;
+.card-body {
+    text-align: center;
 }
 
 #footer{
@@ -37,9 +37,4 @@
 
 .carousel-inner {
     margin-top: 2px;
-}
-
-.card-img-top {
-    width: 200px;
-    height: 200px;
 }

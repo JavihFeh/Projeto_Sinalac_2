@@ -21,7 +21,7 @@
         <div id="header">
             <nav class="navbar navbar-light">
                 <a class="navbar-brand"><img class="rounded logo" src="https://via.placeholder.com/50">
-                    <b>Marca</b></a>
+                    <b>Sinalac</b></a>
                 <form class="form-inline">
                     <input class="form-control mr-sm-2" type="search" placeholder="Procure por um item..." aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
@@ -76,30 +76,48 @@
                             <span class="sr-only">Proximo</span>
                         </a>
                     </div>
-                    <div class="row justify-content-center">
+
+                    <div id="produtos_div" class="row justify-content-center">
                         <div class="col-sm-12 col-lg-4">
-                            <div class="card" style="width: 18rem;">
-                                <img src="img/brownie.png" class="card-img-top" alt="Brownie"/>
+                            <div class="card">
+                                <img src="img/brownie.png" class="card-img-top" alt="Brownie" />
                                 <div class="card-body">
-                                    <h6>Brownie Belive - R$4,99 </h6>
+                                    <a href="#" data-bs-toggle="#brownie_add" data-bs-toggle="modal"> Brownie Belive - R$4,99 </a>
                                     <p class="card-text">Brownie Zero Sem Glúten sabor Chocolate 40G</p>
+                                    <div class="modal fade" id="brownie_add" tabindex="-1" aria-labelledby="brownielabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Brownie Belive</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Você deseja adicionar este item ao carrinho?</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-lg-4">
-                            <div class="card" style="width: 18rem;">
+                            <div class="card">
                                 <img src="img/iogurt.jpg" class="card-img-top" alt="Iogurte">
                                 <div class="card-body">
-                                    <h6>Iogurte Vigor - R$3,49 </h6>
+                                    <a href="#" data-bs-toggle> Iogurte Vigor - R$3,49 </a>
                                     <p class="card-text">Iogurte Grego Sem Lactose sabor tradicionar 100g</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-lg-4">
-                            <div class="card" style="width: 18rem;">
+                            <div class="card">
                                 <img src="img/leite_amd.jpg" class="card-img-top" alt="Leite de amendoas">
                                 <div class="card-body">
-                                    <h6>Leite de amendoas ADES - R$11,49 </h6>
+                                    <a href="#" data-bs-toggle> Leite de amendoas ADES - R$11,49 </a>
                                     <p class="card-text">Leite de amendoas 4 sabores 1L</p>
                                 </div>
                             </div>
@@ -107,28 +125,28 @@
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-sm-12 col-lg-4">
-                            <div class="card" style="width: 18rem;">
+                            <div class="card">
                                 <img src="img/leite_cast.png" class="card-img-top" alt="Leite de castanhas">
                                 <div class="card-body">
-                                    <h6>Leite de castanha de caju  Cajueiro - R$22,99 </h6>
+                                    <a href="#" data-bs-toggle> Leite de castanha de caju Cajueiro - R$22,99 </a>
                                     <p class="card-text">Leite de castanha de caju 1L</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-lg-4">
-                            <div class="card" style="width: 18rem;">
+                            <div class="card">
                                 <img src="img/leite_cond.jpg" class="card-img-top" alt="Leite condensado sem lactose">
                                 <div class="card-body">
-                                    <h6>Leite condensado Piracanjuba - R$6,90 </h6>
+                                    <a href="#" data-bs-toggle> Leite condensado Piracanjuba - R$6,90 </a>
                                     <p class="card-text">Leite condensado sem lactose 395g</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-lg-4">
-                            <div class="card" style="width: 18rem;">
+                            <div class="card">
                                 <img src="img/sorv.png" class="card-img-top" alt="Sorvete">
                                 <div class="card-body">
-                                    <h6>Sorvete Kibon - R$18,90 </h6>
+                                    <a href="#" data-bs-toggle> Sorvete Kibon - R$18,90 </a>
                                     <p class="card-text">Sorvete napolitano cremosíssimo sem lactose 800ml</p>
                                 </div>
                             </div>
