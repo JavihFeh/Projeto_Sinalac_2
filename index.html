@@ -7,25 +7,26 @@
 
     <title>Sinalac - Produtos sem lactose</title>
     <!--  Javascript  -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
     <!--  CSS  -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <div id="wrapper">
 
         <div id="header">
-            <nav class="navbar navbar-light">
+            <nav id="logo-nav" class="navbar navbar-light">
                 <a class="navbar-brand"><img class="rounded logo" src="https://via.placeholder.com/50">
                     <b>Sinalac</b></a>
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Procure por um item..." aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                <form class="d-flex form-inline">
+                    <input class="form-control  me-2" type="search" placeholder="Procure por um item..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">
+                        Pesquisar</button>
                 </form>
+
             </nav>
 
             <ul id="nav-header" class="nav nav-tabs">
@@ -82,21 +83,47 @@
                             <div class="card">
                                 <img src="img/brownie.png" class="card-img-top" alt="Brownie" />
                                 <div class="card-body">
-                                    <a href="#" data-bs-toggle="#brownie_add" data-bs-toggle="modal"> Brownie Belive - R$4,99 </a>
+                                    <a href="#"> Brownie Belive - R$4,99 </a>
                                     <p class="card-text">Brownie Zero Sem Glúten sabor Chocolate 40G</p>
-                                    <div class="modal fade" id="brownie_add" tabindex="-1" aria-labelledby="brownielabel" aria-hidden="true">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="button" data-bs-toggle="modal" data-bs-target="#brownieAdd">Adicionar ao carrinho</button>
+
+                                    <div class="modal fade" id="brownieAdd" tabindex="-1" aria-labelledby="brownieLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Brownie Belive</h5>
+                                                    <h5 class="modal-title" id="brownieLabel">Carrinho</h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <p>Você deseja adicionar este item ao carrinho?</p>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                    <div class="col-sm-12">
+                                                        <p>Você deseja adicionar Brownie Belive ao carrinho?</p>
+                                                        <img class="img-modal-compra" src="img/brownie.png">
+                                                        <br>
+                                                        <h6>Brownie Belive</h6>
+                                                        <div class="input-group mb-3">
+                                                            <button class="btn btn-outline-secondary" type="button" id="brownie_menos">-</button>
+                                                            <input type="text" class="input-compra-quantidade" id="brownie_input" placeholder="" aria-label="Quantidade do brownie" aria-describedby="brownie-input">
+                                                            <button class="btn btn-outline-secondary" type="button" id="brownie_mais">+</button>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <p class="desc-prod">
+                                                                    Fonte de fibras e adoçado naturalmente com stévia<br>
+                                                                    • DELICIOSO: Macio, molhadinho, chocolate que derrete na boca, e ainda SEM AÇÚCAR
+                                                                    <br>
+                                                                    • DO BEM: sem glúten, sem leite/lactose, com ingredientes não transgênicos, zero gordura trans e livre de aromas artificiais
+                                                                    <br>
+                                                                    • VERSÁTIL: uma opção do bem, prática e saborosa pata matar a vontade de comer doce
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Talvez mais tarde</button>
+                                                            <button type="button" onclick="window.location.href='carrinho.html'" class="btn btn-primary">Sim</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -110,6 +137,43 @@
                                 <div class="card-body">
                                     <a href="#" data-bs-toggle> Iogurte Vigor - R$3,49 </a>
                                     <p class="card-text">Iogurte Grego Sem Lactose sabor tradicionar 100g</p>
+                                    <button class="btn btn-outline-success my-2 my-sm-0" data-bs-toggle="modal" data-bs-target="#iogurteAdd" type="button">Adicionar ao carrinho</button>
+
+                                    <div class="modal fade" id="iogurteAdd" tabindex="-1" aria-labelledby="iogurteLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="iogurteLabel">Carrinho</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                    <div class="col-sm-12">
+                                                        <p>Você deseja adicionar Iogurte Vigor ao carrinho?</p>
+                                                        <img class="img-modal-compra" src="img/iogurt.jpg">
+                                                        <br>
+                                                        <h6>Iogurte Grego Vigor</h6>
+                                                        <div class="input-group mb-3">
+                                                            <button class="btn btn-outline-secondary" type="button" id="brownie_menos">-</button>
+                                                            <input type="text" class="input-compra-quantidade" id="brownie_input" placeholder="" aria-label="Quantidade do brownie" aria-describedby="brownie-input">
+                                                            <button class="btn btn-outline-secondary" type="button" id="brownie_mais">+</button>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <p class="desc-prod">
+                                                                    Iogurte (concentrado protéico de leite, leite desnatado e/ou leite desnatado reconstituído, creme de leite, açúcar líquido, preparado de cereal (água, açúcar, amido modificado, farinha de arroz, ácido ascórbico, acidulante ácido cítrico, espessantes goma xantana, goma guar e carboximetilcelulose sódica, conservante sorbato de potássio), amido modificado, fermento lácteo e estabilizante gelatina) e Calda de frutas (açúcar, morango, água, amora, framboesa, amido modificado, lactato de cálcio, estabilizantes pectina, goma xantana, goma guar e carboximetilcelulose sódica, acidulante ácido cítrico, corante natural carmim, aroma idêntico ao natural de frutas vermelhas e conservador sorbato de potássio).
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Talvez mais tarde</button>
+                                                    <button type="button" onclick="window.location.href='carrinho.html'" class="btn btn-primary">Sim</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -119,6 +183,43 @@
                                 <div class="card-body">
                                     <a href="#" data-bs-toggle> Leite de amendoas ADES - R$11,49 </a>
                                     <p class="card-text">Leite de amendoas 4 sabores 1L</p>
+                                    <button class="btn btn-outline-success my-2 my-sm-0" data-bs-toggle="modal" data-bs-target="#amendoasAdd" type="button">Adicionar ao carrinho</button>
+
+                                    <div class="modal fade" id="amendoasAdd" tabindex="-1" aria-labelledby="amendoasLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="amendoasLabel">Carrinho</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                    <div class="col-sm-12">
+                                                        <p>Você deseja adicionar Leite de Amendoas ADES ao carrinho?</p>
+                                                        <img class="img-modal-compra" src="img/leite_amd.jpg">
+                                                        <br>
+                                                        <h6>Leite de Amendoas ADES</h6>
+                                                        <div class="input-group mb-3">
+                                                            <button class="btn btn-outline-secondary" type="button" id="brownie_menos">-</button>
+                                                            <input type="text" class="input-compra-quantidade" id="brownie_input" placeholder="" aria-label="Quantidade do brownie" aria-describedby="brownie-input">
+                                                            <button class="btn btn-outline-secondary" type="button" id="brownie_mais">+</button>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <p class="desc-prod">
+                                                                    Ades a Base de Amêndoas Original é uma opção saudável para aqueles que buscam bebidas vegetais ricas em proteínas e vitaminas. Experimente!
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Talvez mais tarde</button>
+                                                    <button type="button" onclick="window.location.href='carrinho.html'" class="btn btn-primary">Sim</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -130,6 +231,47 @@
                                 <div class="card-body">
                                     <a href="#" data-bs-toggle> Leite de castanha de caju Cajueiro - R$22,99 </a>
                                     <p class="card-text">Leite de castanha de caju 1L</p>
+
+
+                                    <button class="btn btn-outline-success my-2 my-sm-0" data-bs-toggle="modal" data-bs-target="#cajuAdd" type="button">Adicionar ao carrinho</button>
+
+                                    <div class="modal fade" id="cajuAdd" tabindex="-1" aria-labelledby="cajuLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="cajuLabel">Carrinho</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                    <div class="col-sm-12">
+                                                        <p>Você deseja adicionar Leite de Castanha de Caju Cajueiro ao carrinho?</p>
+                                                        <img class="img-modal-compra" src="img/leite_cast.png">
+                                                        <br>
+                                                        <h6>Leite de Castanha de Caju Cajueiro</h6>
+                                                        <div class="input-group mb-3">
+                                                            <button class="btn btn-outline-secondary" type="button" id="brownie_menos">-</button>
+                                                            <input type="text" class="input-compra-quantidade" id="brownie_input" placeholder="" aria-label="Quantidade do brownie" aria-describedby="brownie-input">
+                                                            <button class="btn btn-outline-secondary" type="button" id="brownie_mais">+</button>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <p class="desc-prod">
+                                                                    A castanha de caju é rica em vitaminas, minerais, proteínas vegetais e gorduras monoinsaturadas, as famosas gorduras do bem.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Talvez mais tarde</button>
+                                                    <button type="button" onclick="window.location.href='carrinho.html'" class="btn btn-primary">Sim</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
@@ -139,6 +281,45 @@
                                 <div class="card-body">
                                     <a href="#" data-bs-toggle> Leite condensado Piracanjuba - R$6,90 </a>
                                     <p class="card-text">Leite condensado sem lactose 395g</p>
+
+                                    <button class="btn btn-outline-success my-2 my-sm-0" data-bs-toggle="modal" data-bs-target="#condensadoAdd" type="button">Adicionar ao carrinho</button>
+
+                                    <div class="modal fade" id="condensadoAdd" tabindex="-1" aria-labelledby="condensadoLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="condensadoLabel">Carrinho</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                    <div class="col-sm-12">
+                                                        <p>Você deseja adicionar Leite Condensado Piracanjuba ao carrinho?</p>
+                                                        <img class="img-modal-compra" src="img/leite_cond.jpg">
+                                                        <br>
+                                                        <h6>Leite Condesado Piracanjuba</h6>
+                                                        <div class="input-group mb-3">
+                                                            <button class="btn btn-outline-secondary" type="button" id="brownie_menos">-</button>
+                                                            <input type="text" class="input-compra-quantidade" id="brownie_input" placeholder="" aria-label="Quantidade do brownie" aria-describedby="brownie-input">
+                                                            <button class="btn btn-outline-secondary" type="button" id="brownie_mais">+</button>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <p class="desc-prod">
+                                                                    Leite Condensado Piracanjuba Zero Lactose 395g
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Talvez mais tarde</button>
+                                                    <button type="button" onclick="window.location.href='carrinho.html'" class="btn btn-primary">Sim</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -148,6 +329,42 @@
                                 <div class="card-body">
                                     <a href="#" data-bs-toggle> Sorvete Kibon - R$18,90 </a>
                                     <p class="card-text">Sorvete napolitano cremosíssimo sem lactose 800ml</p>
+                                    <button class="btn btn-outline-success my-2 my-sm-0" data-bs-toggle="modal" data-bs-target="#sorveteAdd" type="button">Adicionar ao carrinho</button>
+
+                                    <div class="modal fade" id="sorveteAdd" tabindex="-1" aria-labelledby="sorveteLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="sorveteLabel">Carrinho</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="col-sm-12">
+                                                        <p>Você deseja adicionar Sorvete Kibon ao carrinho?</p>
+                                                        <img class="img-modal-compra" src="img/sorv.png">
+                                                        <br>
+                                                        <h6>Cremosíssimo Napolitano</h6>
+                                                        <div class="input-group mb-3">
+                                                            <button class="btn btn-outline-secondary" type="button" id="brownie_menos">-</button>
+                                                            <input type="text" class="input-compra-quantidade" id="brownie_input" placeholder="" aria-label="Quantidade do brownie" aria-describedby="brownie-input">
+                                                            <button class="btn btn-outline-secondary" type="button" id="brownie_mais">+</button>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <p class="desc-prod">
+                                                                    Morango, chocolate ou baunilha? Na dúvida, fique com os 3. Se cada um em casa tem uma preferência, Kibon Napolitano é o sorvete ideal para agradar todo mundo.5L
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Talvez mais tarde</button>
+                                                    <button type="button" onclick="window.location.href='carrinho.html'" class="btn btn-primary">Sim</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -155,10 +372,16 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="fixed-bottom justify-content-center" id="footer">
+        <div class="fixed-bottom justify-content-center" id="footer">
+        <button type="button" onclick="window.location.href='carrinho.html'" class="btn btn-success position-absolute bottom-100 end-0">
+            Carrinho <span class="badge bg-secondary">0</span>
+        </button>
         <a class="justify-content-center" href="#"> Todos os direitos reservados a @.</a>
     </div>
+    </div>
 
-</body></html>
+    
+
+</body>
+
+</html>
