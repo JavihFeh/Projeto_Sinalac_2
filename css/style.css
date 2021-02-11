@@ -2,16 +2,28 @@
     padding-bottom: 30px;
 }
 
+#logo{
+    width: 75px;
+    height: 75px;
+}
+
 #logo-nav{
     padding-left: 5px;
     padding-right: 5px;
 }
+
+
 #nav-header{
-    background-color: palegreen;
+    background-color: #43E07C;
 }
+
+.btn-outline-success{
+    border-color: #AB77B8;
     
+}
+
 .btn-outline-success:hover{
-    background-color: limegreen;
+    background-color: #9743E0;
     
 }
 
@@ -26,7 +38,7 @@
 #footer{
     margin-top: 5px;
     height: 25px;
-    background-color: limegreen;
+    background-color: #43E07C;
     text-align: center;
 }
 
