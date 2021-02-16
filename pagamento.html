@@ -23,7 +23,7 @@
         <div id="header">
             <nav class="navbar navbar-light">
                 <a class="navbar-brand"><img class="rounded logo" id="logo" src="img/Sinalac.png"></a>
-                <p style="text-align:center; font-family:  'Satisfy', cursive; font-size: 40px;">Sinalac</p>
+                <p class="position-absolute top-5 start-50 translate-middle-x" style="font-family:  'Satisfy', cursive; font-size: 40px;">Sinalac</p>
                 <form class="d-flex form-inline">
                     <input class="form-control  me-2" type="search" placeholder="Procure por um item..." aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">
@@ -33,7 +33,7 @@
 
             <ul id="nav-header" class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active border-0" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Produtos</a>
@@ -50,7 +50,7 @@
                     <a class="nav-link" href="assinatura.html">Assinaturas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre</a>
+                    <a class="nav-link" href="sobre.html">Sobre</a>
                 </li>
             </ul>
         </div>
@@ -62,13 +62,13 @@
                 <div class="card-body">
                     <h6>Informações pessoais</h6>
                     <div class="input-group">
-                        <span class="input-group-text">Primeiro e ultimo nome</span>
-                        <input type="text" aria-label="Primeiro nome" class="form-control">
-                        <input type="text" aria-label="Ultimo nome" class="form-control">
+                        <span style="margin-bottom: 5px;" class="input-group-text">Primeiro e ultimo nome</span>
+                        <input style="margin-bottom: 5px;" type="text" aria-label="Primeiro nome" class="form-control">
+                        <input style="margin-bottom: 5px;" type="text" aria-label="Ultimo nome" class="form-control">
                     </div>
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" aria-label="Input para selecionar o provedor de email">
-                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Provedor</button>
+                        <button style="background-color: #43E07C; color: black;" class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Provedor</button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="#">@gmail.com</a></li>
                             <li><a class="dropdown-item" href="#">@hotmail.com</a></li>
@@ -77,9 +77,9 @@
                         </ul>
                     </div>
                     <div class="input-group">
-                        <span class="input-group-text">Endereço e número</span>
-                        <input type="text" aria-label="Endereço" class="form-control">
-                        <input type="text" aria-label="Número" class="form-control">
+                        <span style="margin-bottom: 5px;" class="input-group-text">Endereço e número</span>
+                        <input style="margin-bottom: 5px;" type="text" aria-label="Endereço" class="form-control">
+                        <input style="margin-bottom: 5px;" type="text" aria-label="Número" class="form-control">
                     </div>
                     <div class="input-group">
                         <span class="input-group-text">CEP</span>
@@ -88,7 +88,7 @@
                     <br>
                     <h6>Informações do cartão</h6>
                     <div class="btn-group">
-                        <button style="margin-bottom: 2px;" type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button style="margin-bottom: 5px; background-color: #43E07C;" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             Escolha a forma de pagamento do cartão
                         </button>
                         <ul class="dropdown-menu">
@@ -97,15 +97,15 @@
                         </ul>
                     </div>
                     <div class="input-group">
-                        <span class="input-group-text">Nome impresso no cartão</span>
-                        <input type="text" aria-label="Nome no cartão" class="form-control">
+                        <span style="margin-bottom: 5px;" class="input-group-text">Nome impresso no cartão</span>
+                        <input style="margin-bottom: 5px;" type="text" aria-label="Nome no cartão" class="form-control">
                     </div>
                     <div class="input-group">
-                        <span class="input-group-text">Numero do cartão</span>
-                        <input type="text" aria-label="Número do cartão" class="form-control">
+                        <span style="margin-bottom: 5px;" class="input-group-text">Numero do cartão</span>
+                        <input style="margin-bottom: 5px;" type="text" aria-label="Número do cartão" class="form-control">
                     </div>
                     <div class="input-group">
-                        <span class="input-group-text">Data de vencimento e CCV</span>
+                        <spanstyle="margin-bottom: 5px;" class="input-group-text">Data de vencimento e CCV</span>
                         <input type="text" aria-label="Data de vencimento do cartão" class="form-control">
                         <input type="text" aria-label="CCV" class="form-control">
                     </div>
