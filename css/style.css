@@ -2,6 +2,10 @@
     padding-bottom: 30px;
 }
 
+.navbar{
+    padding: 5px;
+}
+
 #logo{
     width: 75px;
     height: 75px;
